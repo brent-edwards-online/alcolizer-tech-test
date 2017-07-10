@@ -6,7 +6,7 @@ namespace Convertor.Parser
 {
     public class AlcolizerInputParser : IInputParser
     {
-        readonly Regex INPUTFORMAT = new Regex(@"^([1-9][0-9\.]*) (g/L|mg/L|g/210L|g/230L|g/dL|ug/L|ug/100mL)$");
+        readonly Regex INPUTFORMAT = new Regex(@"^([0-9][0-9\.]*) (g/L|mg/L|g/210L|g/230L|g/dL|ug/L|ug/100mL)$");
 
         public Tuple<double, string> Parse(string inputString)
         {

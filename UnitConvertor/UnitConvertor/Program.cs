@@ -16,9 +16,7 @@ namespace Convertor
             try
             {
                 var argument = validator.Parse(args);
-
                 var input = parser.Parse(Console.ReadLine());
-
                 var outputString = convertor.Convert(input.Item1, input.Item2, argument);
                 Console.WriteLine(outputString);
             }

@@ -144,5 +144,15 @@ namespace UnitConvertor.Test
             Assert.AreEqual(1.0, actual.Item1);
             Assert.AreEqual("g/L", actual.Item2);
         }
+
+        [TestMethod]
+        [TestCategory("Test Input Parser")]
+        public void DecimalValueShouldParseCorrectly()
+        {
+            var actual = parser.Parse("0.1 g/L");
+            Assert.AreEqual(0.1, actual.Item1);
+            Assert.AreEqual("g/L", actual.Item2);
+        }
+
     }
 }
