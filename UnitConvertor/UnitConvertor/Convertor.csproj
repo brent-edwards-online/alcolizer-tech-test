@@ -48,7 +48,7 @@
     <Compile Include="Parsers\IInputParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Parsers\AloclizerArgumentParser.cs" />
+    <Compile Include="Parsers\AlcolizerArgumentParser.cs" />
     <Compile Include="Parsers\IArgumentParser.cs" />
   </ItemGroup>
   <ItemGroup>
